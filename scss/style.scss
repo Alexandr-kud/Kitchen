@@ -59,8 +59,63 @@
 
 .cabinet {
     padding: 70px 0 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__img {
+        margin-bottom: 70px;
+        display: inline-block;
+    }
 }
 
+.cabinet-box {
+    max-width: 630px;
+    width: 100%;
+}
+
+.cabinet-box__content {
+    position: relative;
+}
+
+.cabinet-box__tabs {
+    display: flex;
+}
+
+.tab-btn {
+    text-transform: uppercase;
+    color: #C4C4C4;
+    max-width: 315px;
+    width: 100%;    
+    text-align: center;
+    padding-bottom: 11px;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.form {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #F2F2F2;
+    padding: 51px 82px 51px 79px;
+    opacity: 0;
+    transition: 1s;
+    input {
+        width: 100%;
+        padding: 13px 13px 12px 12px;
+        margin-bottom: 29px;
+    }
+}
+
+.form.active {
+    opacity: 1;
+   
+}
 
 
 
