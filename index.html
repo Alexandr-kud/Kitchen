@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<header class="header header-vh" id="header">
+	<header class="header" id="header">
 		<div class="line-nav">
 			<div class="container">
 				<a href="#index.html" class="line-nav__logo">
@@ -80,7 +80,7 @@
 					</div>
 					<div class="cabinet-box__content" id="cabinet-box-contents">
 						<form action="#" class="form active" data-content="1">
-							<input type="text" name="login" placeholder="Email*" required>
+							<input type="email" name="login" placeholder="Email*" required>
 							<input type="password" name="pass" placeholder="Пароль*" required>
 							<input type="checkbox" id="form-checkd">
 							<label for="form-checkd" name="cab-remember">Запомнить меня</label>
@@ -88,9 +88,12 @@
 							<a href="#" class="form-rest">Забыли пароль?</a>
 						</form>
 						<form action="#" class="form" data-content="2">
-							<input type="text">
-							<input type="text">
-							<input type="text">
+							<input type="text" placeholder="Ф.И.О*" required name="full-name">
+							<input type="email" name="login" placeholder="Email*" required>
+							<input type="email" name="repeat-login" placeholder="Подтвердить e-mail*" required>
+							<input type="password" name="password" placeholder="Пароль*" required>
+							<input type="password" name="repeat-password" placeholder="Подтвердить Пароль*" required>
+							<button href="#" class="form-btn form-btn-crieation btn">Создать аккаунт</button>
 						</form>
 					</div>
 				</div>
@@ -103,11 +106,11 @@
 				<a href="#index.html" class="line-nav__logo">
 					Kitchen
 				</a>
-				<div class="social">
-					<a href="#" class="social__link"><i class="fab fa-font-awesome"></i></a>
-					<a href="#" class="social__link"><i class="fab fa-font-awesome"></i></a>
-					<a href="#" class="social__link"><i class="fab fa-font-awesome"></i></a>
-					<a href="#" class="social__link"><i class="fab fa-font-awesome"></i></a>
+				<div class="social footer-social">
+					<a href="#" class="social__link"><i class="fab fa-vk"></i></a>
+					<a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+					<a href="#" class="social__link"><i class="fab fa-youtube"></i></a>
 				</div>
 			</div>
 		</div>	

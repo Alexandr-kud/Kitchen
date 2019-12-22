@@ -3,9 +3,6 @@
 @import "_global";
 @import "fonts";
 
-.header-vh {
-    min-height: 100vh;
-}
 
 .line-nav {
     padding: 41px 0;
@@ -62,10 +59,11 @@
 }
 
 .cabinet {
+    min-height: 911px;
+    height: 100%;
     padding: 70px 0 92px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     &__img {
         margin-bottom: 70px;
@@ -130,6 +128,9 @@
     margin-top: 25px;
     margin-bottom: 14px;
 }
+.form-btn-crieation {
+    width: 227px;
+}
 
 .form-rest {
     display: block;
@@ -154,6 +155,33 @@
     }
         &:hover:before {
         transform: scaleX(1) translateY(5px);
+    }
+}
+
+.footer .line-nav {
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+.line-nav .footer-social {
+    max-width: 93px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .social__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border: 1px solid #C2A969;
+        border-radius: 50%;
+        margin-bottom: 14px;
+        transition: .5s ease;
+        &:hover {
+            background: #C2A969;
+            color: #000;
+        }
     }
 }
 
