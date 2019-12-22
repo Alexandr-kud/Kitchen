@@ -3,6 +3,10 @@
 @import "_global";
 @import "fonts";
 
+.header-vh {
+    min-height: 100vh;
+}
+
 .line-nav {
     padding: 41px 0;
     font-family: $fonts-menu;
@@ -83,6 +87,7 @@
 }
 
 .tab-btn {
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     color: #C4C4C4;
     max-width: 315px;
@@ -106,16 +111,52 @@
     opacity: 0;
     transition: 1s;
     input {
+        font-family: "Montserrat", sans-serif;
         width: 100%;
         padding: 13px 13px 12px 12px;
         margin-bottom: 29px;
+        outline: none;
+        font-size: 15px;
     }
 }
 
 .form.active {
     opacity: 1;
-   
+    z-index: 1;
 }
+
+.form-btn {
+    width: 106px;
+    margin-top: 25px;
+    margin-bottom: 14px;
+}
+
+.form-rest {
+    display: block;
+    position: relative;
+    width: 85px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    color: #000000;
+    transition: .5s ease;
+    &::before {
+        content: '';
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $color-menu;
+        transition: 0.5s;
+        transform: scaleX(0) translateY(5px);
+    }
+        &:hover:before {
+        transform: scaleX(1) translateY(5px);
+    }
+}
+
 
 
 
