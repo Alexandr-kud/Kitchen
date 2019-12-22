@@ -3,7 +3,8 @@
 @import "_global";
 @import "fonts";
 
-
+// Box личного кабинете. Начало
+// Страница стартовая index. Начало
 .line-nav {
     padding: 41px 0;
     font-family: $fonts-menu;
@@ -128,6 +129,7 @@
     margin-top: 25px;
     margin-bottom: 14px;
 }
+
 .form-btn-crieation {
     width: 227px;
 }
@@ -185,7 +187,13 @@
     }
 }
 
+//Страница стартоваяюКонец
 
+
+
+
+
+// Box личного кабинете. Конец
 
 
 @import "media";
