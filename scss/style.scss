@@ -189,7 +189,58 @@
 
 //Страница стартоваяюКонец
 
+.personal {
+    padding-top: 65px;
+    padding-bottom: 80px;
+    text-align: center;
+}
 
+.box-data {
+    display: flex;
+    .form {
+        display: block;
+        opacity: 1;
+        max-width: 363px;
+        width: 100%;
+        padding: 0;
+    }
+    .cabinet-box__tabs {
+        display: flex;
+        flex-direction: column;
+    }
+    .cabinet-box__content_container {
+        width: 995px;
+        background: #F2F2F2;
+        .form {
+            position: relative;
+        }
+    }
+    .cabinet-box__tabs {
+        max-width: 325px;
+        width: 100%;
+    }
+    .tab-btn {
+        font-family: $fonts-menu;
+        text-transform: uppercase;
+        color: #C4C4C4;
+        max-width: 100%;
+        width: 100%;    
+        height: 61px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 15px;
+        color: #000000;
+        padding-bottom: 0;
+        border-bottom: 0.5px solid rgba($color: #000000, $alpha: 0.5);
+    }
+    .tab-btn.active{
+        background: #F2F2F2;
+        border-bottom: 0.5px solid rgba($color: #000000, $alpha: 0);
+    }
+
+}
 
 
 
