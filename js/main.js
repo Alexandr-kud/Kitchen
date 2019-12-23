@@ -20,7 +20,7 @@ let cabinetTabs = document.getElementById('cabinet-box-tabs'),
             }
         }
     });
-
+// дополнительный блок для табов на странице лк, логика поднято с changeClass
     cabinetTabs.addEventListener('click', function(e) {
         let currTab = event.target.dataset.btn;
         changeClass(event.target);

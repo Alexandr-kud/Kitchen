@@ -203,6 +203,29 @@
         max-width: 363px;
         width: 100%;
         padding: 0;
+        text-align: left;
+        h2 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 17px;
+            font-weight: normal;
+            margin-bottom: 18px;
+        }
+        span {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            font-size: 9px;
+        }
+        .form-btn {
+            max-width: 152px;
+            width: 100%;
+            margin-left: 0;
+        }
+        .form-link {
+            width: 92px;
+            margin-left: 30px;           
+            font-weight: 300;
+            font-size: 10px;
+        }
     }
     .cabinet-box__tabs {
         display: flex;
@@ -211,6 +234,7 @@
     .cabinet-box__content_container {
         width: 995px;
         background: #F2F2F2;
+        padding: 28px 64px 22px;
         .form {
             position: relative;
         }
