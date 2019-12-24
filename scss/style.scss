@@ -193,6 +193,7 @@
     padding-top: 65px;
     padding-bottom: 80px;
     text-align: center;
+    min-height: 911px;
 }
 
 .box-data {
@@ -230,6 +231,7 @@
     .cabinet-box__tabs {
         display: flex;
         flex-direction: column;
+        position: relative;
     }
     .cabinet-box__content_container {
         width: 995px;
@@ -238,6 +240,18 @@
         .form {
             position: relative;
         }
+    }
+    .cabinet-box__content_container {
+        opacity: 0;
+        visibility: hidden;
+        top: 0;
+        position: absolute;
+        transition: .5s ease;
+
+    }
+    .cabinet-box__content_container.active {
+        opacity: 1;
+        visibility: visible;
     }
     .cabinet-box__tabs {
         max-width: 325px;
@@ -473,6 +487,8 @@
 .panel-collapse {
     .panel__list {
         margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
     }
     .panel-body {
         background: #ffffff;
@@ -480,6 +496,7 @@
         padding: 21px 73px 27px 64px;
         width: 955px;
         margin-left: -45px;
+        margin-bottom: 30px;
     }
     .panel__item_head {
         display: flex;
