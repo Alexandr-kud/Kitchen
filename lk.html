@@ -95,21 +95,132 @@
 							</form>
 						</div>
 						<div class="cabinet-box__content_container" data-content="2">
-							<form action="#" class="form">
-								<h2>Профиль</h2>
-								<span>Ф.И.О</span>
-								<input type="text" name="full-name" placeholder="Катя Иванова" required>
-								<span>Логин</span>
-								<input type="email" name="login" placeholder="E-mail@mail.ru" required>
-								<span>Пароль</span>
-								<input type="password" name="pass" placeholder="* * * * * * * * *" required>
-								<button href="#" class="form-btn btn">Сохранить</button>
-								<a href="#" class="form-rest form-link">Изменить пароль</a>
-							</form>
+							<div class="story">
+								<h2 class="story__head">
+									История закозов
+								</h2>
+								<div class="panel">
+									<div class="panel-heading">
+										<a href="#"><i class="fa fa-folder"></i>Окна</a>
+									</div>
+									<div class="panel-collapse">
+										<div class="panel-body">
+											<ul class="panel__list">
+												<li>
+													<p>
+														Комментарии__ к КП по окнам Satels
+													</p>
+													<div class="loading">
+														<img src="img/PDF.svg" alt="PDF" class="img__loading">
+														<p>
+															(.PDF 34Кб) Обновлено 12.09
+														</p>
+													</div>
+													<a href="file/rest/Kommentarii_k_KP_po_oknam_Satels.pdf" download class="download__link">
+														Скачать <img src="img/arrow-down.svg" alt="arrow-down">
+													</a> 
+												</li>
+												<li>
+													<p>
+														Окна ресторан _ Veka SL70
+													</p>
+													<div class="loading loading-right">
+														<img src="img/PDF.svg" alt="word" class="img__loading">
+														<p>
+															(.PDF 288Кб) Обновлено 12.09
+														</p>
+													</div>
+													<a href="file/rest/Okna_restoran_Veka_SL70.pdf" download class="download__link">
+														Скачать <img src="img/arrow-down.svg" alt="arrow-down">
+													</a> 
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="panel">
+									<div class="panel-heading">
+										<a href="#"><i class="fa fa-folder"></i>Окна</a>
+									</div>
+									<div class="panel-collapse">
+										<div class="panel-body">
+											<ul class="panel__list">
+												<li>
+													<p>
+														Комментарии__ к КП по окнам Satels
+													</p>
+													<div class="loading">
+														<img src="img/PDF.svg" alt="PDF" class="img__loading">
+														<p>
+															(.PDF 34Кб) Обновлено 12.09
+														</p>
+													</div>
+													<a href="file/rest/Kommentarii_k_KP_po_oknam_Satels.pdf" download class="download__link">
+														Скачать <img src="img/arrow-down.svg" alt="arrow-down">
+													</a> 
+												</li>
+												<li>
+													<p>
+														Окна ресторан _ Veka SL70
+													</p>
+													<div class="loading loading-right">
+														<img src="img/PDF.svg" alt="word" class="img__loading">
+														<p>
+															(.PDF 288Кб) Обновлено 12.09
+														</p>
+													</div>
+													<a href="file/rest/Okna_restoran_Veka_SL70.pdf" download class="download__link">
+														Скачать <img src="img/arrow-down.svg" alt="arrow-down">
+													</a> 
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="panel">
+									<div class="panel-heading">
+										<a href="#"><i class="fa fa-folder"></i>Окна</a>
+									</div>
+									<div class="panel-collapse">
+										<div class="panel-body">
+											<ul class="panel__list">
+												<li>
+													<p>
+														Комментарии__ к КП по окнам Satels
+													</p>
+													<div class="loading">
+														<img src="img/PDF.svg" alt="PDF" class="img__loading">
+														<p>
+															(.PDF 34Кб) Обновлено 12.09
+														</p>
+													</div>
+													<a href="file/rest/Kommentarii_k_KP_po_oknam_Satels.pdf" download class="download__link">
+														Скачать <img src="img/arrow-down.svg" alt="arrow-down">
+													</a> 
+												</li>
+												<li>
+													<p>
+														Окна ресторан _ Veka SL70
+													</p>
+													<div class="loading loading-right">
+														<img src="img/PDF.svg" alt="word" class="img__loading">
+														<p>
+															(.PDF 288Кб) Обновлено 12.09
+														</p>
+													</div>
+													<a href="file/rest/Okna_restoran_Veka_SL70.pdf" download class="download__link">
+														Скачать <img src="img/arrow-down.svg" alt="arrow-down">
+													</a> 
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="cabinet-box__content_container" data-content="3">
 							<div class="cards">
-								<h2 class="carda__head">
+								<h2 class="card__head">
 									Вам понравилось
 								</h2>
 								<div class="card">
@@ -117,14 +228,62 @@
 										<div class="card__item">
 											<img src="img/berghoff.png" alt="berghoff" class="card__img">
 											<div class="card__post">
-												<p class="card__text">
+												<p class="card__head">
 													Набор ножей Berghoff 9пр Dark Wood
 												</p>
 												<p class="card__text">
 													Артикул: 1309010
 												</p>
 											</div>
-											
+											<div class="stepper stepper--style-2 js-spinner">
+												<input autofocus type="number" min="0" max="100" step="1" value="0" class="stepper__input" data-stepper-debounce="400">
+												<div class="stepper__controls">
+													<button type="button" spinner-button="up">+</button>
+													<button type="button" spinner-button="down">-</button>
+												</div>
+											</div>
+											<a href="#" class="card__btn btn">В корзину</a>
+											<a href="#" class="card__close btn">X</a>
+										</div>
+										<div class="card__item">
+											<img src="img/berghoff.png" alt="berghoff" class="card__img">
+											<div class="card__post">
+												<p class="card__head">
+													Набор ножей Berghoff 9пр Dark Wood
+												</p>
+												<p class="card__text">
+													Артикул: 1309010
+												</p>
+											</div>
+											<div class="stepper stepper--style-2 js-spinner">
+												<input autofocus type="number" min="0" max="100" step="1" value="0" class="stepper__input" data-stepper-debounce="400">
+												<div class="stepper__controls">
+													<button type="button" spinner-button="up">+</button>
+													<button type="button" spinner-button="down">-</button>
+												</div>
+											</div>
+											<a href="#" class="card__btn btn">В корзину</a>
+											<a href="#" class="card__close btn">X</a>
+										</div>
+										<div class="card__item">
+											<img src="img/berghoff.png" alt="berghoff" class="card__img">
+											<div class="card__post">
+												<p class="card__head">
+													Набор ножей Berghoff 9пр Dark Wood
+												</p>
+												<p class="card__text">
+													Артикул: 1309010
+												</p>
+											</div>
+											<div class="stepper stepper--style-2 js-spinner">
+												<input autofocus type="number" min="0" max="100" step="1" value="0" class="stepper__input" data-stepper-debounce="400">
+												<div class="stepper__controls">
+													<button type="button" spinner-button="up">+</button>
+													<button type="button" spinner-button="down">-</button>
+												</div>
+											</div>
+											<a href="#" class="card__btn btn">В корзину</a>
+											<a href="#" class="card__close btn">X</a>
 										</div>
 									</ul>
 								</div>
@@ -151,6 +310,7 @@
 		</div>	
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/stepper.min.js"></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
