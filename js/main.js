@@ -32,3 +32,5 @@ let cabinetTabs = document.getElementById('cabinet-box-tabs'),
         }
     });
 // Конец
+
+
