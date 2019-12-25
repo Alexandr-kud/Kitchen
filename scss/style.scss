@@ -786,7 +786,30 @@
 }
 
 .bestseller {
+    display: flex;
     padding: 79px 0 88px;
+
+}
+
+.creuset {
+    width: 60%;
+    height: 217px;
+    background: #F2F2F2;
+    padding: 44px 0;
+    right: 0;
+    margin-left: auto;
+    display: flex;
+    position: relative;
+}
+
+.creuset__title {
+    font-family: "Trajan Pro", sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.creuset__img {
+    position: absolute;
 }
 
 
