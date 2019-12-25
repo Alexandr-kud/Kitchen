@@ -220,7 +220,33 @@
 			</div>
 		</div>
 		<div class="container">
-			
+			<div class="cabinet">
+				<img src="img/logo.png" alt="logo" class="cabinet__img">
+				<div class="cabinet-box">
+					<div class="cabinet-box__tabs" id="cabinet-box-tabs">
+						<div class="tab-btn active" data-btn="1">Войти</div>
+						<div class="tab-btn" data-btn="2">Создать аккаунт</div>
+					</div>
+					<div class="cabinet-box__content" id="cabinet-box-contents">
+						<form action="#" class="form active" data-content="1">
+							<input type="email" name="login" placeholder="Email*" required>
+							<input type="password" name="pass" placeholder="Пароль*" required>
+							<input type="checkbox" id="form-checkd">
+							<label for="form-checkd" name="cab-remember">Запомнить меня</label>
+							<button href="#" class="form-btn btn">Войти</button>
+							<a href="#" class="form-rest">Забыли пароль?</a>
+						</form>
+						<form action="#" class="form" data-content="2">
+							<input type="text" placeholder="Ф.И.О*" required name="full-name">
+							<input type="email" name="login" placeholder="Email*" required>
+							<input type="email" name="repeat-login" placeholder="Подтвердить e-mail*" required>
+							<input type="password" name="password" placeholder="Пароль*" required>
+							<input type="password" name="repeat-password" placeholder="Подтвердить Пароль*" required>
+							<button href="#" class="form-btn form-btn-crieation btn">Создать аккаунт</button>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 	<footer class="footer" id="footer">

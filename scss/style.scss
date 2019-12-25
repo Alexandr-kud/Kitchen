@@ -6,10 +6,10 @@
 // Box личного кабинете. Начало
 // Страница стартовая index. Начало
 .line-nav {
-    padding: 41px 0;
     font-family: $fonts-menu;
     background: #000;
     text-transform: uppercase;
+    position: relative;
     .container {
         display: flex;
         align-items: center;
@@ -34,6 +34,38 @@
     }
 }
 
+
+.sub-menu {
+    display: none;
+    left: 0;
+    top: 111px;
+    width: 100%;
+    padding: 17px 0 50px;
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    text-transform: none;
+    animation: fadeIn .7s ease-in-out;
+    .container {
+        align-items: flex-start;
+    }
+    &::after  {
+        content: '';
+        top: -13px;
+        left: 42%;
+        position: absolute;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 15px 15px 15px;
+        border-color: transparent transparent #ffffff transparent;
+        z-index: 5;
+        transition: .5s ease;
+    }   
+}
+
+
 .menu {
     width: 875px;
     display: flex;
@@ -41,26 +73,33 @@
     &__link {
         font-size: 13px;
         position: relative;
-        &::before {
-            content: '';
-            bottom: 0;
-            left: 0;
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            background-color: $color-menu;
-            transition: 0.5s;
-            transform: scaleX(0) translateY(5px);
-        }
-            &:hover:before {
-            transform: scaleX(1) translateY(5px);
-        }
+        padding: 49px 0;
+        display: block;
     }
-    
+}
+
+.menu__hover:hover .sub-menu {
+    display: flex;
+}
+
+.sub-menu-inner {
+    font-size: 14px;
+}
+
+.sub-menu-inner__item a{
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+}
+
+.sub-menu-inner__item:first-child a {
+    font-family: "Trajan Pro", sans-serif;
+    display: inline-block;
+    font-size: 12px;
+    color: #C2A969;
+    margin-bottom: 10px;
 }
 
 .cabinet {
-    min-height: 911px;
     height: 100%;
     padding: 70px 0 92px;
     display: flex;
@@ -102,13 +141,11 @@
 }
 
 .form {
-    position: absolute;
-    top: 0;
+    display: none;
     width: 100%;
     background: #F2F2F2;
     padding: 51px 82px 51px 79px;
-    opacity: 0;
-    transition: 1s;
+    animation: fadeIn .7s ease-in-out;
     input {
         font-family: "Montserrat", sans-serif;
         width: 100%;
@@ -120,8 +157,7 @@
 }
 
 .form.active {
-    opacity: 1;
-    z-index: 1;
+    display: block;
 }
 
 .form-btn {
@@ -187,6 +223,7 @@
     }
 }
 
+
 //Страница стартоваяюКонец
 
 .personal {
@@ -242,16 +279,11 @@
         }
     }
     .cabinet-box__content_container {
-        opacity: 0;
-        visibility: hidden;
-        top: 0;
-        position: absolute;
-        transition: .5s ease;
-
+        display: none;
+        animation: fadeIn .7s ease-in-out;
     }
     .cabinet-box__content_container.active {
-        opacity: 1;
-        visibility: visible;
+        display: block;
     }
     .cabinet-box__tabs {
         max-width: 325px;

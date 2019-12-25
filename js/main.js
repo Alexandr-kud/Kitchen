@@ -1,7 +1,8 @@
 // Логика активации табов по клику. Начало
 let cabinetTabs = document.getElementById('cabinet-box-tabs'),
     cabinetContents = document.querySelectorAll('.form'),
-    cabinetBoxContentContainer = document.querySelectorAll('.cabinet-box__content_container');
+    cabinetBoxContentContainer = document.querySelectorAll('.cabinet-box__content_container'),
+    menuHover = document.querySelectorAll('.menu__hover');
 
     function changeClass(el) {
         for(let i = 0; i < cabinetTabs.children.length; i++) {
@@ -33,12 +34,13 @@ let cabinetTabs = document.getElementById('cabinet-box-tabs'),
     });
 // Конец
 
-$(document).ready(function () {
 
-    $('.panel-heading').click(function () {
+$(document).ready(function () {
+    $('.panel-heading').click(function() {
         $(this).toggleClass('in').next().slideToggle();
         $('.panel-heading').not(this).removeClass('in').next().slideUp();
     });
-
 });
+
+
 
