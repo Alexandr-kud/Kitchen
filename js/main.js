@@ -1,46 +1,40 @@
-// Логика активации табов по клику. Начало
-let cabinetTabs = document.getElementById('cabinet-box-tabs'),
-    cabinetContents = document.querySelectorAll('.form'),
-    cabinetBoxContentContainer = document.querySelectorAll('.cabinet-box__content_container'),
-    menuHover = document.querySelectorAll('.menu__hover');
-
-    function changeClass(el) {
-        for(let i = 0; i < cabinetTabs.children.length; i++) {
-            cabinetTabs.children[i].classList.remove('active');
-        };
-        el.classList.add('active');
-    };
-
-    cabinetTabs.addEventListener('click', function(e) {
-        let currTab = event.target.dataset.btn;
-        changeClass(event.target);
-        for(let i = 0; i < cabinetContents.length; i++) {
-            cabinetContents[i].classList.remove('active');
-            if(cabinetContents[i].dataset.content == currTab) {
-                cabinetContents[i].classList.add('active');
-            }
-        }
-    });
-// дополнительный блок для табов на странице лк, логика поднято с changeClass
-    cabinetTabs.addEventListener('click', function(e) {
-        let currTab = event.target.dataset.btn;
-        changeClass(event.target);
-        for(let i = 0; i < cabinetBoxContentContainer.length; i++) {
-            cabinetBoxContentContainer[i].classList.remove('active');
-            if(cabinetBoxContentContainer[i].dataset.content == currTab) {
-                cabinetBoxContentContainer[i].classList.add('active');
-            }
-        }
-    });
-// Конец
-
 
 $(document).ready(function () {
+
     $('.panel-heading').click(function() {
         $(this).toggleClass('in').next().slideToggle();
         $('.panel-heading').not(this).removeClass('in').next().slideUp();
     });
+
+    $('.main__slaider').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 1,
+        prevArrow: '<img class="slaider-arrows slaider-arrows__left" id="slaider-arrows__left" src="img/arrow-left.png"><img>',
+        nextArrow: '<img class="slaider-arrows slaider-arrows__right" id="slaider-arrows__right" src="img/arrow-right.png"><img>',
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+            }
+        ]
+    });
 });
+
 
 
 

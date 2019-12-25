@@ -642,6 +642,155 @@
     padding: 23px 0 35px;
 }
 
+.main__slaider {
+    background: #F2F2F2;
+    border-top: 1px solid #C2A969;
+    border-bottom: 1px solid #C2A969;
+    padding: 23px 0 27px;
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        background: #fff;
+        position: absolute;
+        height: 100%;
+        width: 90%;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+}
+
+.main__item {
+    max-width: 1337px;
+    background: #fff;
+    z-index: 2;
+}
+
+.menu__box {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__text {
+    font-family: "Trajan Pro", sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    display: flex;
+    margin-bottom: 78px;
+    .letter {
+        font-family: "Bickham Script Three", sans-serif;
+        font-family: Bickham Script Three;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 100px;
+        position: absolute;
+        left: -82px;
+        top: -38px;
+        color: #C2A969;
+    }
+    .lette-2 {
+        left: 17px;
+    }
+    .letter-3 {
+        left: -56px;
+    }
+    .letter-4 {
+        left: -19px;
+    }
+    p {
+        width: 282px;
+        text-align: right;
+        position: relative;
+        .last {
+            margin-right: 65px;
+        }
+    }
+    .text-4 {
+        width: 242px;
+    }
+    .text-5 {
+        width: 261px;
+    }
+}
+
+.main__post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    z-index: -1;
+    margin: 0 auto;
+    transform: translateX(566px);
+    transition: 2.0s ease-out;
+}
+
+.main__img {
+    max-width:867px;
+    width: 100%;
+    z-index: 2;
+}
+
+.main__btn {
+    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat;
+    font-size: 16px;
+    letter-spacing: 0.4em;
+    color: #C2A969;
+    width: 209px;
+    display: block;
+    padding: 19px 0 20px;
+    border: 1px solid #C2A969;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .5s ease;
+    &:hover {
+        color: #fff;
+        background: #C2A969;
+    }
+}
+
+.slick-slide {
+    text-align: center;
+    z-index: 5;
+    position: relative;
+}
+
+
+.slick-center .main__post {
+    z-index: 1;
+    transform: translateX(0);
+} 
+
+.slick-prev, .slick-arrow {
+    border: none;
+    position: absolute;
+    z-index: 7;
+    top: 50%;
+}
+
+.slaider-arrows {
+    width: 34px;
+    height: 68px;
+}
+
+.slaider-arrows__left {
+    left: 114px;
+}
+
+.slaider-arrows__right {
+    right: 114px;
+}
+
+.bestseller {
+    padding: 79px 0 88px;
+}
+
+
+
 
 // index/ Конец
 
