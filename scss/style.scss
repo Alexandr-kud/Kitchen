@@ -786,14 +786,14 @@
 }
 
 .bestseller {
+    position: relative;
     display: flex;
     padding: 79px 0 88px;
 
 }
 
 .creuset {
-    width: 60%;
-    height: 217px;
+    width: 67%;
     background: #F2F2F2;
     padding: 44px 0;
     right: 0;
@@ -802,18 +802,66 @@
     position: relative;
 }
 
+.creuset__box {
+    margin-left: 429px;
+}
+
 .creuset__title {
     font-family: "Trajan Pro", sans-serif;
     font-weight: normal;
     font-size: 30px;
+    max-width: 284px;
+    margin-bottom: 10px;
 }
 
 .creuset__img {
     position: absolute;
+    left: -117px;
+    top: -30px;
+    z-index: 3;
 }
 
+.creuset__text {
+    font-family: "Montserrat", sans-serif;
+    max-width: 417px;
+    margin-bottom: 23px;
+    font-weight: 300;
+    font-size: 16px;
+}
 
+.creuset__btn {
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    padding: 9px 0;
+    font-size: 14px;
+    letter-spacing: 0.4em;
+    text-align: center;
+    text-transform: uppercase;
+    background: #C2A969;
+    border: 1px solid #C2A969;
+    color: #fff;
+    width: 171px;
+    transition: .5s ease;
+    &:hover {
+        background: #fff;
+        color:#C2A969;
+    }
+}
 
+.best {
+    font-family: "Trajan Pro", sans-serif;
+    max-width: 719px;
+    width: 100%;
+    background: #C2A969;
+    padding: 22px 57px 19px 0;
+    position: absolute;
+    text-align: right;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    z-index: 2;
+    top: 97px;
+}
 
 // index/ Конец
 
