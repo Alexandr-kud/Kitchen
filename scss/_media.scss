@@ -1,3 +1,17 @@
+@media screen and (max-width: 1850px) {
+    .creuset__img {
+        position: absolute;
+        left: -98px;
+        top: -17px;
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    .best {
+        max-width: 671px;
+    }
+}
+
 @media screen and (max-width: 1600px) {
     .main__item {
         max-width: 1258px;
@@ -23,6 +37,13 @@
     .main__btn {
         margin: 0 auto;
     }
+    .creuset__img {
+        position: absolute;
+        left: -84px;
+        top: 11px;
+        z-index: 3;
+        width: 508px;
+    }    
 }
 
 @media screen and (max-width: 1400px) {
@@ -64,11 +85,20 @@
     .main__text .text-5 {
         width: 225px;
     }
+    .best {
+        max-width: 574px;
+    }
 }
 
 @media screen and (max-width: 1300px) {
     .main__item {
         max-width: 1020px;
+    }
+    .creuset__img {
+        width: 472px;
+    }
+    .creuset__box {
+        margin-left: 379px;
     }
 }
 
@@ -115,6 +145,21 @@
     }
     .menu__link {
         font-size: 12px;
+    }
+    .creuset__box {
+        margin-left: 302px;
+    }
+    .creuset__img {
+        width: 403px;
+    }
+    .best {
+        max-width: 505px;
+    }
+    .creuset__text {
+        font-size: 14px;
+    }
+    .cards {
+        justify-content: center;
     }
 }
 
@@ -187,6 +232,18 @@
     }
     .main__item {
         max-width: 750px;
+    }
+    .menu {
+        width: 660px;
+    }
+    .menu__link {
+        font-size: 10px;
+    }
+    .line-nav .social {
+        max-width: 120px;
+    }
+    .creuset__box {
+        margin-left: 284px;
     }    
 }
 
@@ -224,9 +281,43 @@
     .main__text .text-5 {
         width: 131px;
     }
+    .hamburger {
+        display: block;
+        position: relative;
+    }
+    nav {
+       display: none;
+    }
+    .creuset {
+        width: 100%;
+    }
+    .creuset__img {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .creuset__box {
+        margin-left: 20px;
+        margin-top: 27px;
+    }
+    .best {
+        top: 42px;
+    }
+    .card {
+        width: 100%;
+        max-width: 376px;
+    }
+    
 }
 
 @media screen and (max-width: 800px) {
+    .bestseller {
+        padding: 0 0 88px 0;
+        background: #E5E5E5;
+    }
+    .catalog {
+        background: #E5E5E5;
+    }
     .basics {
         padding: 0;
     }
@@ -258,7 +349,8 @@
         transform: translateX(0);
         transform: translateY(-250px);
     }
-    .slick-center .main__post {
+    .slick-active .main__post {
+        margin-top: 80px;
         transform: translateX(0);
         transform: translateY(0);
     }
@@ -274,9 +366,6 @@
     }
     .main__btn {
         display: none;
-    }
-    .bestseller {
-        padding: 18px 0 88px;
     }
     .main__text .int {
         width: 138px;
@@ -299,17 +388,81 @@
     .main__text .letter-5 {
         left: -44px;
     }
-    
+    .best {
+        top: -14px;
+    } 
+    .card {
+        max-width: 307px;
+    }
 }
 
 @media screen and (max-width: 700px) {
-    
+    .creuset__btn {
+        display: none;
+    }
+    .creuset__text {
+        display: none;
+    }
+    .creuset__title {
+        font-size: 24px;
+        max-width: 250px;
+    }
+    .creuset {
+        align-items: center;   
+    }
+    .best {
+        width: 149px;
+        font-size: 15px;
+        color: #000;
+        text-align: center;
+        bottom: 58px;
+        top: inherit;
+        right: 0;
+        padding-right: 0;
+    }
+    .card {
+        max-width: 303px;
+    }
+    .creuset__img {
+        width: 47%;
+        left: auto;
+        top: auto;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .card__box {
+        flex-direction: column;
+    }
+    .card__block {
+        margin-bottom: 7px;
+    }
+    .card {
+        max-width: 44%;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    
+    .card__price {
+        font-size: 23px;
+        margin-left: 12px;
+    }
+    .creuset__title {
+        font-size: 21px;
+        max-width: 199px;
+    }
 }
 
 @media screen and (max-width: 500px) {
-    
+    .card {
+        max-width: 70%;
+    }
+    .creuset__img {
+        margin-left: 20px;
+    }
+    .creuset__title {
+        font-size: 16px;
+        max-width: 168px;
+    }
 }
