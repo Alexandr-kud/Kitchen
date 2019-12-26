@@ -79,6 +79,12 @@ input[type="checkbox"]:checked + label::before {
     background: url(../img/tick-sign.png) center / contain;
 }
 
+.d-none {
+    display: none;
+}
+
+
+
 @keyframes fadeIn {
     0% {
         opacity: 0;

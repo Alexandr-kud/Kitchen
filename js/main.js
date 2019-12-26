@@ -34,7 +34,13 @@ $(document).ready(function () {
         ]
     });
 
-    
+    $('.close').click(function() {
+        $('.search').toggle('d-none');
+    });
+
+    $('.search-open').click(function() {
+        $('.search').toggle('d-none');
+    });
 
 });
 
