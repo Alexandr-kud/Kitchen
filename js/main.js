@@ -8,18 +8,19 @@ $(document).ready(function () {
 
     $('.main__slaider').slick({
         centerMode: true,
-        centerPadding: '60px',
+        centerPadding: '0px',
         slidesToShow: 1,
+        slidesToScroll: 1,
         prevArrow: '<img class="slaider-arrows slaider-arrows__left" id="slaider-arrows__left" src="img/arrow-left.png"><img>',
         nextArrow: '<img class="slaider-arrows slaider-arrows__right" id="slaider-arrows__right" src="img/arrow-right.png"><img>',
         responsive: [
             {
-            breakpoint: 768,
+            breakpoint: 900,
             settings: {
                 arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
+                centerMode: false,
+                centerPadding: '0px',
+                slidesToShow: 1
             }
             },
             {
@@ -27,7 +28,7 @@ $(document).ready(function () {
             settings: {
                 arrows: false,
                 centerMode: true,
-                centerPadding: '40px',
+                centerPadding: '0px',
                 slidesToShow: 1
             }
             }

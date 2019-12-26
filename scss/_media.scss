@@ -1,0 +1,315 @@
+@media screen and (max-width: 1600px) {
+    .main__item {
+        max-width: 1258px;
+    }
+    .main__img {
+        max-width: 784px;
+    }
+    .slaider-arrows__left {
+        left: 65px;
+    }
+    .slaider-arrows__right {
+        right: 70px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .main__item {
+        max-width: 1170px;
+    }
+    .main__img {
+        max-width: 694px;
+    }
+    .main__btn {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .main__item {
+        max-width: 1095px;
+    }
+    .main__img {
+        max-width: 605px;
+    }
+    .main__text {
+        font-size: 30px;
+    }
+
+    .main__text p {
+        width: 237px;
+    }
+    .main__text .letter {
+        left: -96px;
+    }
+    .main__text .text-4 {
+        width: 206px;
+    }
+    .main__text p .last {
+        margin-right: 45px;
+    }
+    .main__text .lette-2 {
+        left: -8px;
+    }
+    .main__text .letter-3 {
+        left: -74px;
+    }
+    .main__text .letter-4 {
+        left: -30px;
+    }
+    .main__text .letter-5 {
+        left: -31px;
+    }
+
+    .main__text .text-5 {
+        width: 225px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .main__item {
+        max-width: 1020px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main__item {
+        max-width: 940px;
+    }
+    .main__img {
+        max-width: 550px;
+    }
+    .main__text {
+        font-size: 25px;
+    }
+    .main__text .letter {
+        left: -38px;
+        top: -29px;
+        font-size: 80px;
+    }
+    .main__btn {
+        width: 180px;
+        font-size: 13px;
+    }
+    .main__text {
+        margin-bottom: 56px;
+    }
+    .main__text .text-4 {
+        width: 172px;
+    }
+    .main__text .text-5 {
+        width: 178px;
+    }
+    .main__text .letter-4 {
+        left: -23px;
+        top: -38px;
+    }
+    .main__text .letter-3 {
+        left: -16px;
+    }
+    .main__text .int{
+        width: 163px;
+    }
+    .menu {
+        width: 760px;
+    }
+    .menu__link {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .main__item {
+        max-width: 856px;
+    }
+    .slaider-arrows__left {
+        left: 31px;
+    }
+    .slaider-arrows__right {
+        right: 42px;
+    }
+    .line-nav__logo {
+        font-size: 26px;
+    }
+    .line-nav .social {
+        max-width: 140px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main__item {
+        max-width: 790px;
+        overflow: hidden;
+    }
+    .main__img {
+        max-width: 466px;
+    }
+    .main__text {
+        font-size: 22px;
+    }
+    .main__text p {
+        width: 172px;
+    }
+    .main__text .letter {
+        left: -63px;
+        top: -22px;
+        font-size: 67px;
+    }
+    .main__text .text-5 {
+        width: 163px;
+    }
+    .main__text .letter-5 {
+        left: -24px;
+    }
+    .main__text .text-4 {
+        width: 157px;
+    }
+    .main__text .letter-4 {
+        left: -7px;
+        top: -31px;
+        font-size: 67px;
+    }
+    .main__btn {
+        width: 148px;
+        font-size: 10px;
+    }
+    .main__text .int {
+        width: 149px;
+    }
+    .main__text .lette-2 {
+        left: -24px;
+    }
+    .main__text p .last {
+        margin-right: 29px;
+    }
+    .main__text .letter-3 {
+        left: -46px;
+    }
+    .main__item {
+        max-width: 750px;
+    }    
+}
+
+@media screen and (max-width: 900px) {
+    .main__slaider::before {
+        width: 100%;
+    }
+    .slick-prev, .slick-arrow {
+        display: none !important;
+    }
+    .slick-initialized .slick-slide {
+        margin-right: 58px;
+    }
+    .main__text {
+        font-size: 18px;
+    }
+    .main__text p {
+        width: 134px;
+    }
+    .main__text .letter {
+        font-size: 58px;
+    }
+    .main__text .int {
+        width: 102px;
+    }
+    .main__text .lette-2 {
+        left: -42px;
+    }
+    .main__text .letter-3 {
+        left: -50px;
+    }
+    .main__text .text-4 {
+        width: 128px;
+    }
+    .main__text .text-5 {
+        width: 131px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .basics {
+        padding: 0;
+    }
+    .menu__box {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .slick-center .main__post {
+        margin-top: 103px;
+    }
+    .slick-initialized .slick-slide {
+        margin-right: 0;
+    }
+    .main__img {
+        max-width: 100%;
+        margin: 0;
+    }
+    .main__item {
+        max-width: 100%;
+    }
+    .main__slaider {
+        background: #F2F2F2;
+        border-top: none; 
+        border-bottom: none; 
+        padding: 0 ; 
+        position: relative;
+    }
+    .main__post {
+        transform: translateX(0);
+        transform: translateY(-250px);
+    }
+    .slick-center .main__post {
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+    .main__text {
+        font-size: 27px;
+    }
+    .main__text p {
+        width: 194px;
+    }
+    .main__text .letter {
+        font-size: 80px;
+        left: -94px;
+    }
+    .main__btn {
+        display: none;
+    }
+    .bestseller {
+        padding: 18px 0 88px;
+    }
+    .main__text .int {
+        width: 138px;
+    }
+    .main__text .lette-2 {
+        left: -74px;
+    }
+    .main__text .letter-3 {
+        left: -70px;
+    }
+    .main__text .text-4 {
+        width: 178px;
+    }
+    .main__text .letter-4 {
+        left: -28px;
+    }
+    .main__text .text-5 {
+        width: 182px;
+    }
+    .main__text .letter-5 {
+        left: -44px;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+}
