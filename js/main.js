@@ -39,11 +39,29 @@ $(document).ready(function () {
         $('.search').toggle('d-none');
     });
 
+    $('.close-lk').click(function() {
+        $('.lk-min').toggle('d-none');
+    });
+
     $('.search-open').click(function() {
         $('.search').toggle('d-none');
     });
 
+    $(window).resize(function () {
+        if($(window).width()<= 800){
+            $('.lk-min__link').removeAttr('href');
+        } else if ($(window).width() >= 801) {
+            $('.lk-min__link').attr('href', 'lk-login.html');
+        };
+    });
+
+    $('.lk-min__link').click(function() {
+        console.log('клик');
+        $('.lk-min').toggle('d-none');
+    });
+
 });
+
 
 var swiper = new Swiper('.swiper-container', {
     pagination: {

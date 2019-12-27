@@ -89,6 +89,10 @@ input[type="checkbox"]:checked + label::before {
     cursor: pointer;
 }
 
+.no {
+    pointer-events: none;
+}
+
 
 
 @keyframes fadeIn {
