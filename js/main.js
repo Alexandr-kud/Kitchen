@@ -48,8 +48,8 @@ $(document).ready(function () {
     });
 
     $(window).resize(function () {
-        if($(window).width()<= 800){
-            $('.lk-min__link').removeAttr('href');
+        if ($(window).width() <= 800) {
+            $('.lk-min__link').removeAttr('href').css("cursor","pointer");
         } else if ($(window).width() >= 801) {
             $('.lk-min__link').attr('href', 'lk-login.html');
         };
