@@ -83,6 +83,12 @@ input[type="checkbox"]:checked + label::before {
     display: none;
 }
 
+.back-btn {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 
 
 @keyframes fadeIn {

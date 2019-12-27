@@ -179,6 +179,12 @@
     .line-nav .social {
         max-width: 140px;
     }
+    .cabinet-box__content {
+        width: 100%;
+    }
+    .box-data .cabinet-box__content_container.active {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -307,6 +313,11 @@
         width: 100%;
         max-width: 376px;
     }
+    .line-nav__logo {
+        font-size: 26px;
+        margin-right: auto;
+        margin-left: 10px;
+    }
     
 }
 
@@ -396,6 +407,12 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .cabinet-box__content {
+        position: absolute;
+    }
+}
+
 @media screen and (max-width: 700px) {
     .creuset__btn {
         display: none;
@@ -441,6 +458,18 @@
     .card {
         max-width: 44%;
     }
+    .swiper-pagination {
+        display: none;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
+    .swiper-slide-none {
+        display: none;
+    }
+    .swiper-container {
+        padding-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -452,11 +481,17 @@
         font-size: 21px;
         max-width: 199px;
     }
+    .cabinet__img {
+        width: 100%;
+    }
+    .cards__btn {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .card {
-        max-width: 70%;
+        max-width: 45%;
     }
     .creuset__img {
         margin-left: 20px;
@@ -464,5 +499,50 @@
     .creuset__title {
         font-size: 16px;
         max-width: 168px;
+    }
+    .card__img-box {
+        height: 145px;   
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .form {
+        padding: 48px 24px 51px 18px;
+    }
+    .card {
+        max-width: 44%;
+    }
+    .card__img-box {
+        height: 100px;
+    }
+    .card__price {
+        font-size: 19px;
+    }
+    .card {
+        padding: 29px 18px 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card__title {
+        font-size: 15px;
+    }
+    .card__img-box {
+        height: 37px;
+    }
+    .card {
+        max-width: 43%;
+        padding: 29px 9px 19px;
+    
+    }
+    .card__btn {
+        font-size: 10px;
+        width: 106px;
+    }
+    .card__price::after {
+        margin-left: -7px;
+    }
+    .card__block {
+        font-size: 14px;
     }
 }
