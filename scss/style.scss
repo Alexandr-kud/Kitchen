@@ -980,6 +980,7 @@
 .cards {
     display: flex;
     flex-wrap: wrap;
+    animation: fadeInOpen .7s ease-in-out;
 }
 
 .cards__btn {

@@ -89,12 +89,20 @@ input[type="checkbox"]:checked + label::before {
     cursor: pointer;
 }
 
+
+
 .no {
     display: block;
 }
 
 .vis {
     display: none;
+}
+
+.cards.open-vis-cards {
+    height: auto; 
+    overflow: visible;
+    transition: .5s ease;
 }
 
 
@@ -105,5 +113,14 @@ input[type="checkbox"]:checked + label::before {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes fadeInOpen {
+    0% {
+        height: 994px;
+    }
+    100% {
+        height: auto;
     }
 }

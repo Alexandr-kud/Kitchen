@@ -551,6 +551,14 @@ input[type="checkbox"]:checked + label::before {
   display: none;
 }
 
+.cards.open-vis-cards {
+  height: auto;
+  overflow: visible;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -566,6 +574,24 @@ input[type="checkbox"]:checked + label::before {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInOpen {
+  0% {
+    height: 994px;
+  }
+  100% {
+    height: auto;
+  }
+}
+
+@keyframes fadeInOpen {
+  0% {
+    height: 994px;
+  }
+  100% {
+    height: auto;
   }
 }
 
@@ -1748,6 +1774,8 @@ input[type="checkbox"]:checked + label::before {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-animation: fadeInOpen .7s ease-in-out;
+          animation: fadeInOpen .7s ease-in-out;
 }
 
 .cards__btn {
@@ -3188,6 +3216,21 @@ input[type="checkbox"]:checked + label::before {
   }
   .cabinet__img {
     width: 100%;
+  }
+  .cards {
+    height: 994px;
+    overflow: hidden;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+    -webkit-animation: fadeInOpen .7s ease-in-out;
+            animation: fadeInOpen .7s ease-in-out;
+  }
+  .swiper-slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .cards__btn {
     display: block;

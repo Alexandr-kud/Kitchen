@@ -647,6 +647,15 @@
     .cabinet__img {
         width: 100%;
     }
+    .cards {
+        height: 994px;
+        overflow: hidden;
+        transition: .5s ease;
+        animation: fadeInOpen .7s ease-in-out;
+    }
+    .swiper-slide {
+        flex-direction: column;
+    }
     .cards__btn {
         display: block;
     }

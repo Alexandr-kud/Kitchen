@@ -69,8 +69,12 @@ $(document).ready(function () {
     // });
 
     $('.lk-min__link').click(function() {
-        console.log('клик');
         $('.lk-min').toggle('d-none');
+    });
+
+    $('.cards__btn').click(function(e) {
+        e.preventDefault();
+        $('.cards-close').toggleClass('open-vis-cards');
     });
 
 });
