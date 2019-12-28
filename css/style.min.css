@@ -1992,8 +1992,81 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .open__menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
   width: 259px;
-  background: #fff;
+  font-weight: normal;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  padding: 19px 0 29px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.open__menu .menu__open li {
+  padding: 9px 0;
+}
+
+.open__menu .menu__open li a {
+  color: #000;
+  margin: 0 14px 0 20px;
+}
+
+.open__menu .open__box,
+.open__menu .panel {
+  margin: 0 14px 0 20px;
+  width: 217px;
+}
+
+.open__menu .panel {
+  margin: 0 14px 0 43px;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: none;
+  color: #000000;
+}
+
+.open__menu .panel a {
+  padding: 9px 0;
+}
+
+.open__menu .panel .panel-heading {
+  padding: 9px 0;
+}
+
+.open__menu .panel .in {
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: none;
+  color: #000000;
+}
+
+.open__menu .panel .panel-collapse .panel-body {
+  width: 100%;
+  background: inherit;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.open__menu .panel .sub-menu-inner__item:first-child a {
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+.open__menu .open-sub-menu {
+  background: #F2F2F2;
+}
+
+.open__menu .sub-menu-inner {
+  margin-top: -22px;
 }
 
 @media screen and (max-width: 1850px) {

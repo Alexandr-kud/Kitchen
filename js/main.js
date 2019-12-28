@@ -47,6 +47,19 @@ $(document).ready(function () {
         $('.search').toggle('d-none');
     });
 
+    $('.opened-sub-menu').click(function() {
+        $('.open-sub-menu').toggle('d-none');
+    });
+
+    $('.close-open-menu').click(function() {
+        $('.open__menu').toggle('d-none');
+    });
+
+    $('.hamburger').click(function() {
+        $('.open__menu').toggle('d-none');
+    });
+
+
     $(window).resize(function () {
         if ($(window).width() <= 800) {
             $('.lk-min__link').removeAttr('href').css("cursor","pointer");
