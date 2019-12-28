@@ -1387,7 +1387,7 @@ input[type="checkbox"]:checked + label::before {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 17px;
-  margin-bottom: 97px;
+  margin-bottom: 47px;
   text-align: left;
 }
 
@@ -1982,6 +1982,7 @@ input[type="checkbox"]:checked + label::before {
 
 .lk__head {
   font-size: 15px;
+  font-weight: normal;
 }
 
 .form-mini {
@@ -2116,6 +2117,7 @@ input[type="checkbox"]:checked + label::before {
 
 .open__menu .open__box .open__head {
   font-size: 15px;
+  font-weight: normal;
 }
 
 .open__menu .open__box span {
@@ -2635,6 +2637,17 @@ input[type="checkbox"]:checked + label::before {
   }
 }
 
+@media screen and (max-width: 1305px) {
+  .cabinet-box__content {
+    max-width: 995px;
+    width: 100%;
+  }
+  .panel-collapse .panel-body {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .main__item {
     max-width: 1020px;
@@ -2644,6 +2657,10 @@ input[type="checkbox"]:checked + label::before {
   }
   .creuset__box {
     margin-left: 379px;
+  }
+  .box-data .cabinet-box__tabs {
+    min-width: 325px;
+    width: 325px;
   }
 }
 
@@ -3327,14 +3344,20 @@ input[type="checkbox"]:checked + label::before {
   .card__img-box {
     height: 145px;
   }
+  .cards {
+    height: 843px;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .form {
     padding: 48px 24px 51px 18px;
   }
+  .lk-min__box-content .form {
+    padding: 0;
+  }
   .card {
-    max-width: 44%;
+    max-width: 43%;
   }
   .card__img-box {
     height: 100px;
@@ -3344,6 +3367,9 @@ input[type="checkbox"]:checked + label::before {
   }
   .card {
     padding: 29px 18px 30px;
+  }
+  .cards {
+    height: 693px;
   }
 }
 
@@ -3367,5 +3393,16 @@ input[type="checkbox"]:checked + label::before {
   }
   .card__block {
     font-size: 14px;
+  }
+  .cards {
+    height: 519px;
+  }
+  .main__text p {
+    width: 192px;
+  }
+  .main__text .letter-0 {
+    font-size: 67px;
+    left: -71px;
+    top: -18px;
   }
 }
