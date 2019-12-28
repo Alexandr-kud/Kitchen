@@ -59,15 +59,14 @@ $(document).ready(function () {
         $('.open__menu').toggle('d-none');
     });
 
-    $(window).resize(function () {
-        if ($(window).width() <= 800) {
-            $('.no').toggle('d-none');
-            $('.vis').toggle('d-none');
-        } else if ($(window).width() >= 801) {
-            $('.no').oggle('d-none');
-            $('.vis').oggle('d-none');
-        };
-    });
+
+    // $(window).resize(function () {
+    //     if ($(window).width() <= 800) {
+    //         $('.lk-min__link').removeAttr('href').css("cursor","pointer");
+    //     } else if ($(window).width() >= 801) {
+    //         $('.lk-min__link').attr('href', 'lk-login.html');
+    //     };
+    // });
 
     $('.lk-min__link').click(function() {
         console.log('клик');

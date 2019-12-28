@@ -544,7 +544,11 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .no {
-  pointer-events: none;
+  display: block;
+}
+
+.vis {
+  display: none;
 }
 
 @-webkit-keyframes fadeIn {
@@ -2873,6 +2877,12 @@ input[type="checkbox"]:checked + label::before {
   }
   .line-nav {
     padding: 25px 0;
+  }
+  .no {
+    display: none;
+  }
+  .vis {
+    display: block;
   }
 }
 

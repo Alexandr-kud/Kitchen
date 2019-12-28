@@ -90,7 +90,11 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .no {
-    pointer-events: none;
+    display: block;
+}
+
+.vis {
+    display: none;
 }
 
 
