@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Kitchen</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="search d-none">
+		<div class="search__input-box">
+			<div class="search__input-img">
+				<img src="img/search-input.png" alt="search" class="search__img">
+			</div>
+			<input type="text" placeholder="Поиск по сайту" name="search" class="search-inp">
+			<span class="close"><img src="img/close.png" alt="close"></span>
+		</div>
+		<div class="searh__box">
+			<ul class="search__list">
+				<li class="search__item">
+					<a href="#" class="search__link">
+						Наборы посуды 
+					</a>
+				</li>
+				<li class="search__item">
+					<a href="#" class="search__link">
+						Кастрюли 
+					</a>
+				</li>
+				<li class="search__item">
+					<a href="#" class="search__link">
+						Ковши и молочники 
+					</a>
+				</li>
+				<li class="search__item">
+					<a href="#" class="search__link">
+						Сковороды 
+					</a>
+				</li>
+				<li class="search__item">
+					<a href="#" class="search__link">
+						Сотейники 
+					</a>
+				</li>
+				<li class="search__item">
+					<a href="#" class="search__link">
+						Казаны, воки и тажины 
+					</a>
+				</li>
+				<li class="search__item">
+					<a href="#" class="search__link">
+						Скороварки 
+					</a>
+				</li>
+				<li class="search__item">
+					<a href="#" class="search__link">
+						Пароварки, мантоварки 
+					</a>
+				</li>
+				<li class="search__item">
+					<a href="#" class="search__link">
+						Посуда для запекания
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="lk-min d-none">
+		<div class="lk-box">
+			<h2 class="lk__head">
+				Личный кабинет
+			</h2>
+			<span class="close-lk">X</span>
+		</div>
+		<div class="lk-min__box-content ">
+			<form action="#" class="form form-mini">
+				<input type="email" name="login" placeholder="Email*" required>
+				<input type="password" name="pass" placeholder="Пароль*" required>
+				<button href="#" class="form-btn btn">Войти</button>
+				<a href="#" class="form-rest">Забыли пароль?</a>
+			</form>
+			<form action="#" class="form form-mini">
+				<h2 class="form__head">
+					Зарегистрироваться
+				</h2>
+				<input type="text" placeholder="Ф.И.О*" required name="full-name">
+				<input type="email" name="login" placeholder="Email*" required>
+				<input type="email" name="repeat-login" placeholder="Подтвердить e-mail*" required>
+				<input type="password" name="password" placeholder="Пароль*" required>
+				<input type="password" name="repeat-password" placeholder="Подтвердить Пароль*" required>
+				<button href="#" class="form-btn form-btn-crieation form-btn-ak btn">Создать аккаунт</button>
+			</form>
+		</div>
+	</div>
+	<div class="open__menu d-none">
+		<div class="open__box">
+			<h2 class="open__head">
+				Каталог
+			</h2>
+			<span class="close-open-menu">X</span>
+		</div>
+		<ul class="menu__open">
+			<li>
+				<a href="#">
+					Бренды
+				</a>
+			</li>
+			<li>
+				<a href="#" class="opened-sub-menu">
+					Сервировка
+				</a>
+				<div class="open-sub-menu d-none">
+					<div class="panel">
+						<div class="panel-heading">
+							Столовые приборы
+						</div>
+						<div class="panel-collapse">
+							<div class="panel-body">
+								<ul class="sub-menu-inner">
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Ложки 
+										</a>
+									</li>
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Вилки 
+										</a>
+									</li>
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Для мяса 
+										</a>
+									</li>
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Для салата 
+										</a>
+									</li>
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Для торта 
+										</a>
+									</li>
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Ложки 
+										</a>
+									</li>
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Вилки 
+										</a>
+									</li>
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Для мяса
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							Для чая и кофе
+						</div>
+						<div class="panel-collapse">
+							<div class="panel-body">
+								<ul class="sub-menu-inner">
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Заварочные чайники 
+										</a>
+									</li>
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Френч-прессы 
+										</a>
+									</li>
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Кофейные наборы 
+										</a>
+									</li>
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Чашки и кружки 
+										</a>
+									</li>
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Стаканы для чая Наборы
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							Текстиль
+						</div>
+						<div class="panel-collapse">
+							<div class="panel-body">
+								<ul class="sub-menu-inner">
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Скатерти 
+										</a>
+									</li>
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Дорожки
+										</a>
+									</li>
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Салфетки
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-heading">
+							Декор
+						</div>
+						<div class="panel-collapse">
+							<div class="panel-body">
+								<ul class="sub-menu-inner">
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Вазы 
+										</a>
+									</li>
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Подсвечники
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>		
+					<div class="panel">
+						<div class="panel-heading">
+							Другое
+						</div>
+						<div class="panel-collapse">
+							<div class="panel-body">
+								<ul class="sub-menu-inner">
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Солонки и перечницы
+										</a>
+									</li>
+									<li class="sub-menu-inner__item">
+										<a href="#">
+											Для хранения специй
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</li>
+			<li>
+				<a href="#">
+					Посуда
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					Ножи
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					Бар 
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					Аксессуары
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					Для дома
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="line-nav">
+		<div class="container">
+			<div class="hamburger d-none">
+				<img src="img/hamburger.png" alt="hamburger" class="hamburger__img">
+			</div>
+			<a href="index.html" class="line-nav__logo">
+				Kitchen
+			</a>
+			<nav>
+				<ul class="menu">
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							Бренды 
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							Посуда для готовки
+						</a>
+					</li>
+					<li class="menu__item menu__hover">
+						<a href="#" class="menu__link">
+							Сервировка
+						</a>
+						<ul class="sub-menu">
+							<div class="container">
+								<li class="sub-menu__item">
+									<ul class="sub-menu-inner">
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Столовые приборы
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Ложки 
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Вилки 
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Для мяса 
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Для салата 
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Для торта 
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Ложки 
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Вилки 
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Для мяса
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="sub-menu__item">
+									<ul class="sub-menu-inner">
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Для чая и кофе
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Заварочные чайники 
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Френч-прессы 
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Кофейные наборы 
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Чашки и кружки 
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Стаканы для чая Наборы
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="sub-menu__item">
+									<ul class="sub-menu-inner">
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Текстиль
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Скатерти 
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Дорожки
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Салфетки
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="sub-menu__item">
+									<ul class="sub-menu-inner">
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Декор
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Вазы 
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Подсвечники
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="sub-menu__item">
+									<ul class="sub-menu-inner">
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Другое
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Солонки и перечницы
+											</a>
+										</li>
+										<li class="sub-menu-inner__item">
+											<a href="#">
+												Для хранения специй
+											</a>
+										</li>
+									</ul>
+								</li>
+							</div>
+						</ul>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							Столовые приборы
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							Ножи
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							Бар
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							Аксессуары
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+							Для дома
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="social">
+				<a href="#" class="social__link search-open"><img src="img/search.png" alt="search"></a>
+				<a href="#" class="social__link"><img src="img/lake.png" alt="lake"></a>
+				<a href="#" class="social__link"><img src="img/packeg.png" alt="packeg"></a>
+				<a href="lk-login.html" class="social__link lk-min__link social__link-in" target="blank"><img src="img/men.png" alt="men"></a>
+			</div>
+		</div>
+	</div>
+	<section class="order-registration" id="order-registration">
+		<div class="container">
+			<div class="order-registration__main">
+				<div class="submenu__top">
+					<a href="#">Главная</a>
+					<p>
+						<span>/</span>Корзина
+					</p>
+				</div>
+				<h2>
+					Оформление заказа
+				</h2>
+				<div class="region__card">
+					<h3>
+						Регион доставки
+					</h3>
+					<p>
+						Местоположение<span class="red-star">*</span>
+					</p>
+					<form class="region__card_form" action="#">
+						<input type="text" name="search" class="region__inp">
+					</form>
+				</div>
+				<div class="method-pay">
+					<h3>
+						Способ оплаты
+					</h3>
+					<form action="#">
+						<input type="checkbox" id="card-checkd">
+						<label for="card-checkd" name="bank-card">Банковские карты</label>
+					</form>
+					<div class="methodpay__plastikcard">
+						<img src="img/visa_logo.png" alt="visa">
+						<img src="img/mastercard_logo.png" alt="mastercard">
+					</div>
+				</div>
+				<div class="method-delivery">
+					<h3>
+						Способ доставки
+					</h3>
+					<form action="#" class="delivery__form">
+						<div class="delivery__wrap">
+							<input type="checkbox" id="courier-checkd">
+							<label for="courier-checkd" name="courier-delivery">Курьером</label>
+						</div>
+						<div class="delivery__wrap">
+							<input type="checkbox" id="picup-checkd">
+							<label for="picup-checkd" name="picup">Самовывоз<span>0р.</span></label>
+						</div>
+					</form>
+				</div>
+				<div class="order-registration__map">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa0763d5fa833904b2b0237fe2e8fc7db62dcff20d688e09b7dfbb5afcbe68729&amp;lang=ru_RU&amp;scroll=false"></script>
+				</div>
+				<div class="place__card">
+					<form action="#">
+						<input type="checkbox" id="place-checkd">
+						<label for="place-checkd" name="place"></label>
+					</form>
+					<div class="place__card_text">
+						<p>
+							117545, Москва г, Подольских Курсантов ул, дом № 17, корпус 2
+						</p>
+						<p>
+							Основной склад
+						</p>
+						<p>
+							Адрес: 117545, Москва г, Подольских Курсантов ул, дом № 17, корпус 2
+						</p>
+						<a href="#" class="place__card_btn">Выбрать</a>
+					</div>
+					
+				</div>
+				<div class="buyer-data">
+					<h3>
+						Данные покупателя
+					</h3>
+					<form action="#" class="buyer-data__form">
+						<p>
+							Ф.И.О<span class="red-star">*</span>
+						</p>
+						<input type="text" required name="full-name">
+						<p>
+							Телефон<span class="red-star">*</span>
+						</p>
+						<input type="tel" class="tel">
+						<p>
+							Комментарии к заказу
+						</p>
+						<textarea class="order-comment"></textarea>
+						<div class="buyer-data__total">
+							<p>
+								Итого: 30 600 р.
+							</p>
+						</div>
+						<button class="buyer-data__form_btn">Оформить заказ</button>
+					</form>
+				</div>
+
+			</div>
+		</div>	
+	</section>
+	<footer class="footer" id="footer">
+		<div class="line-nav">
+			<div class="container">
+				<a href="#index.html" class="line-nav__logo">
+					Kitchen
+				</a>
+				<div class="social footer-social">
+					<a href="#" class="social__link"><i class="fab fa-vk"></i></a>
+					<a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+					<a href="#" class="social__link"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+		</div>	
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
