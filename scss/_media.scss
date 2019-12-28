@@ -527,7 +527,8 @@
 }
 
 @media screen and (max-width: 768px) {
-    .container {
+    .order-made .container, 
+    .order-registration .container {
         width: 576px;
       }
       .region__inp {
@@ -643,7 +644,8 @@
 }
 
 @media screen and (max-width: 576px) {
-    .container {
+    .order-made .container, 
+    .order-registration .container {
       width: 320px;
     }
     .place__card {
@@ -763,7 +765,6 @@
     .card {
         max-width: 43%;
         padding: 29px 9px 19px;
-    
     }
     .card__btn {
         font-size: 10px;

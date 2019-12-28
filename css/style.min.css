@@ -1929,8 +1929,7 @@ input[type="checkbox"]:checked + label::before {
   background: #fff;
 }
 
-.lk-box,
-.open__box {
+.lk-box {
   font-family: "Trajan Pro", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1945,8 +1944,7 @@ input[type="checkbox"]:checked + label::before {
   margin-bottom: 36px;
 }
 
-.lk-box span,
-.open__box span {
+.lk-box span {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -2067,6 +2065,29 @@ input[type="checkbox"]:checked + label::before {
 
 .open__menu .sub-menu-inner {
   margin-top: -22px;
+}
+
+.open__menu .open__box {
+  font-family: "Trajan Pro", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #C2A969;
+  margin-bottom: 36px;
+}
+
+.open__menu .open__box .open__head {
+  font-size: 15px;
+}
+
+.open__menu .open__box span {
+  font-family: "Montserrat", sans-serif;
 }
 
 .order-registration {
@@ -3035,7 +3056,8 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media screen and (max-width: 768px) {
-  .container {
+  .order-made .container,
+  .order-registration .container {
     width: 576px;
   }
   .region__inp {
@@ -3160,7 +3182,8 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media screen and (max-width: 576px) {
-  .container {
+  .order-made .container,
+  .order-registration .container {
     width: 320px;
   }
   .place__card {

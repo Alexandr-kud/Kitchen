@@ -1147,8 +1147,7 @@
     background: #fff;
 }
 
-.lk-box,
-.open__box{
+.lk-box {
     font-family: "Trajan Pro", sans-serif;
     display: flex;
     justify-content: space-between;
@@ -1268,6 +1267,22 @@
     .sub-menu-inner {
         margin-top: -22px;
     } 
+    .open__box{
+        font-family: "Trajan Pro", sans-serif;
+        display: flex;
+        justify-content: space-between;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #C2A969;
+        margin-bottom: 36px;
+        .open__head {
+            font-size: 15px;
+        }
+        span {
+            font-family: "Montserrat", sans-serif;
+        }   
+    }
 }
 
 //mini-menu. Close
