@@ -1724,6 +1724,7 @@
 
 .product__container-item {
     display: none;
+
     .form {
         display: block;
         background: inherit;
@@ -1796,6 +1797,9 @@
                 margin-top: 2px;
             }
         }
+    }
+    .form.d-none {
+        display: none;
     }
 }
 
@@ -1884,6 +1888,7 @@
     cursor: pointer;
 
 }
+
 
 .product__title {
     font-style: normal;
@@ -2011,6 +2016,12 @@
                 }
             }
         }
+        .backet {
+            display: none;
+            width: 35px;
+            padding: 5px 0;
+        }
+        
     }
 }
 
@@ -2023,6 +2034,136 @@
     max-width: 220px;
     width: 100%;
 }
+
+.swiper-container {
+    h2 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+        color: #000000;
+        margin-bottom: 43px;
+    }
+}
+
+.product-panel {
+    display: none;
+    width: 100%;
+    border-top: 0.5px solid #000000;
+    .panel {
+        margin-bottom: 0;
+    }
+    .panel-heading {
+        border-bottom: 0.5px solid #000000;
+        padding: 25px 0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        text-transform: uppercase;
+        align-items: center;
+        span {
+            margin-left: 20px;
+        }
+        span:last-child {
+            margin-right: 20px;
+            font-size: 20px;
+            &::after {
+                content: '+';
+            }
+        }
+    
+    }
+    .in.panel-heading span:last-child {
+        &::after {
+            content: '-';
+        }
+    }
+    .panel-collapse .panel-body {
+        margin-left: 0;
+        margin-bottom: 0;
+        padding: 0;
+        background: none;
+        box-shadow: none;
+    }
+    .panel-body {
+        .form {
+            display: block;
+            background: inherit;
+            padding: 0;
+            width: 95%;
+            margin: 0 auto;
+            input,
+            textarea {
+                width: 100%;
+            }
+            p {
+                max-width: 100%;
+                width: 100%;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 12px;
+                color: #000000;
+                margin-bottom: 5px;
+            }
+            .form__title {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                color: #000000;
+                margin-bottom: 20px;
+            }
+            .form-group {
+                display: flex;
+                input {
+                    display: none;
+                }
+                label::before {
+                    height: 20px;
+                    width: 15px;
+                    border: none;
+                    background: url('../img/staple.png') no-repeat center;
+                }
+            }
+            .form__btn-box {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .form-btn {
+                    display: block;
+                    background: #000;
+                    color: #fff;
+                    font-weight: 500;
+                    font-size: 10px;
+                    letter-spacing: 0.4em;
+                    padding: 12px 0;
+                    border: 1px solid #000;
+                    text-align: center;
+                    text-transform: uppercase;
+                    width: 142px;
+                    transition: .5s ease;
+                    &:hover {
+                        background: #fff;
+                        color: #000;
+                    }
+                }
+            }
+            .rating {
+                margin-top: 16px;
+                span {
+                    margin-left: 10px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    color: #000000;
+                    margin-top: 2px;
+                }
+            }
+        }
+        .form.d-none {
+            display: none;
+        }
+    }
+}
+
 
 
 

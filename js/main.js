@@ -59,6 +59,16 @@ $(document).ready(function () {
         $('.open__menu').toggle('d-none');
     });
 
+    $('.form-open').click(function() {
+        $('.form').toggle('d-none');
+        $('.product__chat-box').toggle('d-none');
+    });
+
+    $('.form-btn').click(function() {
+        $('.form').toggle('d-none');
+        $('.product__chat-box').toggle('d-none');
+    });
+
 
     // $(window).resize(function () {
     //     if ($(window).width() <= 800) {
