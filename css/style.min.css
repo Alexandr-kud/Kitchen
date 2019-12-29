@@ -2641,6 +2641,112 @@ input[type="checkbox"]:checked + label::before {
   width: 100%;
   border-top: 0.5px solid #000000;
   border-bottom: 0.5px solid #000000;
+  margin-bottom: 14px;
+}
+
+.product__container-total .product__price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 29px;
+}
+
+.product__container-total .product__price-box span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  color: #000000;
+  display: inline-block;
+}
+
+.product__container-total .product__price-box span:first-child {
+  margin-bottom: 7px;
+}
+
+.product__container-total .product__price-box span:last-child {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.product__container-total .product__price-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 284px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product__container-total .product__price-tabs .product__btn {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.4em;
+  color: #FFFFFF;
+  padding: 10px 0;
+  background: #C2A969;
+  width: 142px;
+  border: 1px solid #C2A969;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.product__container-total .product__price-tabs .product__btn:hover {
+  background: #fff;
+  color: #C2A969;
+}
+
+.product__container-total .product__price-tabs .stepper {
+  margin-left: 0;
+}
+
+.product__container-total .product__price-tabs .produck__img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #000;
+  height: 34px;
+  width: 34px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.product__container-total .product__price-tabs .produck__img-box svg {
+  fill: #000;
+  cursor: pointer;
+}
+
+.product__container-total .product__price-tabs .produck__img-box svg path {
+  fill: none;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.product__container-total .product__price-tabs .produck__img-box svg:hover path {
+  fill: #C2A969;
 }
 
 @media screen and (max-width: 1850px) {
