@@ -565,14 +565,16 @@
         </div>
         <div class="cabinet-box">
             <div class="cabinet-box__tabs" id="cabinet-box-tabs">
-                <div class="tab-btn active" data-btn="1">Описание</div>
-                <div class="tab-btn" data-btn="2">Характеристики</div>
-                <div class="tab-btn" data-btn="3">Отзывы</div>
+                <div class="tab-btn product-tab active" data-btn="1">Описание</div>
+                <div class="tab-btn product-tab" data-btn="2">Характеристики</div>
+                <div class="tab-btn product-tab" data-btn="3">Отзывы</div>
             </div>
             <div class="cabinet-box__content product__container" id="product-box-contents">
                 <div class="product__container-item active" data-content="1">
-                    Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Таким образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.
-                    Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности играет важную роль в формировании дальнейших направлений развития. Не следует, однако забывать, что сложившаяся структура организации способствует подготовки.
+                    <p>
+                        Разнообразный и богатый опыт начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации новых предложений. Таким образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации новых предложений.
+                        Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности играет важную роль в формировании дальнейших направлений развития. Не следует, однако забывать, что сложившаяся структура организации способствует подготовки.
+                    </p>
                 </div>
                 <div class="product__container-item" data-content="2">
                     <ul class="product__container-list">
@@ -603,14 +605,40 @@
                     </ul>
                 </div>
                 <div class="product__container-item" data-content="3">
-                    <form action="#" class="form">
-                        <input type="email" name="login" placeholder="Email*" required>
-                        <input type="password" name="pass" placeholder="Пароль*" required>
-                        <input type="checkbox" id="form-checkd">
-                        <label for="form-checkd" name="cab-remember">Запомнить меня</label>
-                        <button href="#" class="form-btn btn">Войти</button>
-                        <a href="#" class="form-rest">Забыли пароль?</a>
-                    </form>
+                    <form action="#" class="buyer-data__form form">
+                        <h2 class="form__title">
+                            Написать отзыв
+                        </h2>
+						<p>
+							Ф.И.О<span class="red-star">*</span>
+						</p>
+						<input type="text" required name="full-name">
+						<p>
+							E-mail<span class="red-star">*</span>
+						</p>
+						<input type="tel" class="tel">
+						<p>
+							Ваш отзыв
+						</p>
+                        <textarea class="order-comment"></textarea>
+                        <div class="form__btn-box">
+                            <div class="form__btn-box-inner">
+                                <div class="form-group">
+                                    <label for="file" class="control-label">Прикрепить вложение</label>
+                                    <input type="file" name="file" id="file">
+                                </div>
+                                <div class="rating">
+                                    <div class="rating-item current" data-rate='1'></div>
+                                    <div class="rating-item" data-rate='2'></div>
+                                    <div class="rating-item" data-rate='3'></div>
+                                    <div class="rating-item" data-rate='4'></div>
+                                    <div class="rating-item" data-rate='5'></div>
+                                    <span>Оценить</span>
+                                </div>
+                            </div>
+                            <button class="form-btn">Отправить</button>
+                        </div>
+					</form>
                     <div class="product__chat-box">
                         <h3 class="product__name">
                             Катя Иванова
@@ -647,7 +675,7 @@
                         Написать отзыв
                     </button>
                 </div>
-            </div>
+            </div>  
         </div>
     </div>
 </section>

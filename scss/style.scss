@@ -1707,11 +1707,12 @@
 
 .rating {
     display: flex;
+    margin-bottom: 18px;
 }
 
 .rating-item {
-    width: 40px;
-    height: 40px;
+    width: 18px;
+    height: 18px;
     background: url(../img/Star-off.png) no-repeat center;
     border: 1px solid #fff;
     cursor: pointer;
@@ -1723,6 +1724,79 @@
 
 .product__container-item {
     display: none;
+    .form {
+        display: block;
+        background: inherit;
+        padding: 0;
+        width: 95%;
+        margin: 0 auto;
+        input,
+        textarea {
+            width: 100%;
+        }
+        p {
+            max-width: 100%;
+            width: 100%;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            color: #000000;
+            margin-bottom: 5px;
+        }
+        .form__title {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            display: flex;
+            input {
+                display: none;
+            }
+            label::before {
+                height: 20px;
+                width: 15px;
+                border: none;
+                background: url('../img/staple.png') no-repeat center;
+            }
+        }
+        .form__btn-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .form-btn {
+                display: block;
+                background: #000;
+                color: #fff;
+                font-weight: 500;
+                font-size: 10px;
+                letter-spacing: 0.4em;
+                padding: 12px 0;
+                border: 1px solid #000;
+                text-align: center;
+                text-transform: uppercase;
+                width: 142px;
+                transition: .5s ease;
+                &:hover {
+                    background: #fff;
+                    color: #000;
+                }
+            }
+        }
+        .rating {
+            margin-top: 16px;
+            span {
+                margin-left: 10px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                color: #000000;
+                margin-top: 2px;
+            }
+        }
+    }
 }
 
 .product__container-item.active {
@@ -1752,10 +1826,63 @@
 .product {
     font-family: "Montserrat", sans-serif;
     padding-top: 14px;
+    padding-bottom: 34px; 
+    .product-tab {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+        text-transform: none;
+        border-bottom: 1px solid #C4C4C4;
+    }
+}
+
+.product-tab.active {
+    color: #C2A969;
+    border-bottom: 2px solid #C2A969;
+}
+
+.product__container-item {
+    padding-top: 23px;
+    P {
+        max-width: 522px;
+        width: 100%;
+    }
+}
+
+.product__container-list {
+    margin: 0 auto;
+    max-width: 499px;
+    width: 100%;
+    li {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #C4C4C4;
+        padding-bottom: 15px;
+        padding-top: 17px;
+        span {
+            margin: 0 26px;
+        }
+    }
 }
 
 .product__box {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 43px;
+
+}
+
+.product__btn {
+    background: none;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #C2A969;
+    outline: none;
+    cursor: pointer;
+
 }
 
 .product__title {
@@ -1773,6 +1900,32 @@
     font-size: 16px;
     color: #000000;
     margin-bottom: 23px;
+}
+
+.product__chat-box {
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 29px;
+    padding-bottom: 29px;
+    border-bottom: 1px solid #C4C4C4;
+    .product__name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        color: #000000;
+        margin-bottom: 16px;
+        span {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+        }
+    }
+    .product__review {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        color: #000000;
+    }
 }
 
 .product__container-total {
@@ -1811,6 +1964,11 @@
         width: 100%;
         align-items: center;
         justify-content: space-between;
+        .articul {
+            font-weight: 300;
+            font-size: 15px;
+            color: #000000;
+        }
         .product__btn {
             display: block;
             text-align: center;
@@ -1856,9 +2014,15 @@
     }
 }
 
+.product-sl {
+    padding-top: 34px;
+    padding-bottom: 51px;
+}
 
-
-
+.product-sl__img {
+    max-width: 220px;
+    width: 100%;
+}
 
 
 

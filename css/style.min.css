@@ -2559,11 +2559,12 @@ input[type="checkbox"]:checked + label::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 18px;
 }
 
 .rating-item {
-  width: 40px;
-  height: 40px;
+  width: 18px;
+  height: 18px;
   background: url(../img/Star-off.png) no-repeat center;
   border: 1px solid #fff;
   cursor: pointer;
@@ -2575,6 +2576,101 @@ input[type="checkbox"]:checked + label::before {
 
 .product__container-item {
   display: none;
+}
+
+.product__container-item .form {
+  display: block;
+  background: inherit;
+  padding: 0;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.product__container-item .form input,
+.product__container-item .form textarea {
+  width: 100%;
+}
+
+.product__container-item .form p {
+  max-width: 100%;
+  width: 100%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.product__container-item .form .form__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.product__container-item .form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__container-item .form .form-group input {
+  display: none;
+}
+
+.product__container-item .form .form-group label::before {
+  height: 20px;
+  width: 15px;
+  border: none;
+  background: url("../img/staple.png") no-repeat center;
+}
+
+.product__container-item .form .form__btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__container-item .form .form__btn-box .form-btn {
+  display: block;
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.4em;
+  padding: 12px 0;
+  border: 1px solid #000;
+  text-align: center;
+  text-transform: uppercase;
+  width: 142px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.product__container-item .form .form__btn-box .form-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.product__container-item .form .rating {
+  margin-top: 16px;
+}
+
+.product__container-item .form .rating span {
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #000000;
+  margin-top: 2px;
 }
 
 .product__container-item.active {
@@ -2609,12 +2705,73 @@ input[type="checkbox"]:checked + label::before {
 .product {
   font-family: "Montserrat", sans-serif;
   padding-top: 14px;
+  padding-bottom: 34px;
+}
+
+.product .product-tab {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: none;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.product-tab.active {
+  color: #C2A969;
+  border-bottom: 2px solid #C2A969;
+}
+
+.product__container-item {
+  padding-top: 23px;
+}
+
+.product__container-item P {
+  max-width: 522px;
+  width: 100%;
+}
+
+.product__container-list {
+  margin: 0 auto;
+  max-width: 499px;
+  width: 100%;
+}
+
+.product__container-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #C4C4C4;
+  padding-bottom: 15px;
+  padding-top: 17px;
+}
+
+.product__container-list li span {
+  margin: 0 26px;
 }
 
 .product__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 43px;
+}
+
+.product__btn {
+  background: none;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #C2A969;
+  outline: none;
+  cursor: pointer;
 }
 
 .product__title {
@@ -2632,6 +2789,35 @@ input[type="checkbox"]:checked + label::before {
   font-size: 16px;
   color: #000000;
   margin-bottom: 23px;
+}
+
+.product__chat-box {
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 29px;
+  padding-bottom: 29px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.product__chat-box .product__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.product__chat-box .product__name span {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.product__chat-box .product__review {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
 }
 
 .product__container-total {
@@ -2687,6 +2873,12 @@ input[type="checkbox"]:checked + label::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.product__container-total .product__price-tabs .articul {
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
 }
 
 .product__container-total .product__price-tabs .product__btn {
@@ -2747,6 +2939,16 @@ input[type="checkbox"]:checked + label::before {
 
 .product__container-total .product__price-tabs .produck__img-box svg:hover path {
   fill: #C2A969;
+}
+
+.product-sl {
+  padding-top: 34px;
+  padding-bottom: 51px;
+}
+
+.product-sl__img {
+  max-width: 220px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1850px) {
