@@ -453,6 +453,11 @@ template {
           box-sizing: border-box;
 }
 
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -715,6 +720,9 @@ input[type="checkbox"]:checked + label::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition-delay: 2s;
+       -o-transition-delay: 2s;
+          transition-delay: 2s;
 }
 
 .sub-menu-inner {
@@ -2545,6 +2553,94 @@ input[type="checkbox"]:checked + label::before {
 .order-made__buycard_btn:hover {
   background: #fff;
   color: #C2A969;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rating-item {
+  width: 40px;
+  height: 40px;
+  background: url(../img/Star-off.png) no-repeat center;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.rating-item.current {
+  background: url(../img/Star-on.png) no-repeat center;
+}
+
+.product__container-item {
+  display: none;
+}
+
+.product__container-item.active {
+  display: block;
+}
+
+.bread-crambs__list {
+  font-family: "Montserrat", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 197px;
+  width: 100%;
+  padding-top: 28px;
+  margin-bottom: 14px;
+  font-weight: normal;
+  font-size: 12px;
+  color: #999999;
+}
+
+.bread-crambs__list li::after {
+  content: '/';
+}
+
+.bread-crambs__list li:last-child:after {
+  content: '';
+}
+
+.product {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 14px;
+}
+
+.product__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+.product__text {
+  max-width: 426px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 23px;
+}
+
+.product__container-total {
+  padding-top: 34px;
+  padding-bottom: 36px;
+  max-width: 628px;
+  width: 100%;
+  border-top: 0.5px solid #000000;
+  border-bottom: 0.5px solid #000000;
 }
 
 @media screen and (max-width: 1850px) {

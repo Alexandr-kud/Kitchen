@@ -2,7 +2,8 @@
 let cabinetTabs = document.getElementById('cabinet-box-tabs'),
     cabinetContents = document.querySelectorAll('.form'),
     cabinetBoxContentContainer = document.querySelectorAll('.cabinet-box__content_container'),
-    menuHover = document.querySelectorAll('.menu__hover');
+    menuHover = document.querySelectorAll('.menu__hover'),
+    productBoxContents = document.querySelectorAll('.product__container-item');
 
     function changeClass(el) {
         for(let i = 0; i < cabinetTabs.children.length; i++) {
@@ -29,6 +30,17 @@ let cabinetTabs = document.getElementById('cabinet-box-tabs'),
             cabinetBoxContentContainer[i].classList.remove('active');
             if(cabinetBoxContentContainer[i].dataset.content == currTab) {
                 cabinetBoxContentContainer[i].classList.add('active');
+            }
+        }
+    });
+
+    cabinetTabs.addEventListener('click', function(e) {
+        let currTab = event.target.dataset.btn;
+        changeClass(event.target);
+        for(let i = 0; i < productBoxContents.length; i++) {
+            productBoxContents[i].classList.remove('active');
+            if(productBoxContents[i].dataset.content == currTab) {
+                productBoxContents[i].classList.add('active');
             }
         }
     });
