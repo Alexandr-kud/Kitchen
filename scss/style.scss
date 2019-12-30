@@ -2316,7 +2316,7 @@
 
     }
     .panel-collapse {
-        display: block !important;
+        display: block;
     }
     .panel-collapse .panel-body {
         width: 248px;
@@ -2405,6 +2405,34 @@
     }
 }
 
+.said-bar-open {
+    height: auto !important;
+    overflow: visible !important;
+}
 
+.panel-color {
+    display: none;
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    li {
+        width: 61px;
+        height: 27px;
+    }
+    li:nth-child(1) {
+        background: #6C4F4F;
+    }
+    li:nth-child(2) {
+        background: #868A6A;
+    }
+    li:nth-child(3) {
+        background: #091523;
+    }
+    li:nth-child(4) {
+        background: #fff;
+        border: 1px solid #000;
+    }
+}
 
 @import "media";

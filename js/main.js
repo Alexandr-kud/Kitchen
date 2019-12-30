@@ -87,14 +87,19 @@ $(document).ready(function () {
         $('.cards-close').toggleClass('open-vis-cards');
     });
 
-    // $(".js-range-slider").ionRangeSlider({
-    //     type: "double",
-    //     min: 0,
-    //     max: 50000,
-    //     from: 0,
-    //     to: 50000,
-    //     grid: false
-    // });
+    $('.said-bar-opening').click(function(e) {
+        e.preventDefault();
+        $('.said-bar').addClass('said-bar-open');
+        $('.said-bar-opening').addClass('d-none');
+        $('.said-bar-close').removeClass('d-none');
+    });
+
+    $('.said-bar-close').click(function(e) {
+        e.preventDefault();
+        $('.said-bar').removeClass('said-bar-open');
+        $('.said-bar-opening').removeClass('d-none');
+        $('.said-bar-close').addClass('d-none');
+    });
 
 });
 

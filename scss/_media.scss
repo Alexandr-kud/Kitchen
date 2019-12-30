@@ -115,6 +115,15 @@
         min-width: 325px;
         width: 325px;
     }
+    .catalog-list .said-bar__list {
+        margin-left: 0;
+    }
+    .catalog-list .panel .panel-heading {
+        margin-left: 32px;
+    }
+    .catalog-list .panel .panel-heading-kat {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -367,6 +376,9 @@
     .product__text {
         max-width: 100%;
     }
+    .said-bar {
+        width: 204px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -453,7 +465,7 @@
         display: none;
     }
     .said-bar {
-        width: 201px;   
+        width: 204px;   
     }
     .catalog-list .cards .card {
         width: 168px;
@@ -872,7 +884,53 @@
     .product__container-total .product__price-tabs .produck__img-box {
         margin-left: 7px;
     }
-  }
+    .catalog-list .panel-collapse {
+        display: none;
+    }
+    .catalog-list .panel .panel-heading {
+        margin-left: 0;
+        font-weight: 300;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #000000;
+        border-bottom: 0.5px solid #000000;
+        padding: 25px 0 22px;
+        position: relative;
+        &::after {
+            content: '+';
+            position: absolute;
+            right: 20px;
+        }
+    }
+    .catalog-list .panel {
+        margin-bottom: 0;
+    }
+    .said-bar {
+        position: absolute;
+        z-index: 5;
+        background: #fff;
+        width: 100%;
+        height: 47px;
+        overflow: hidden;
+    }
+    .catalog-list .panel {
+        width: 90%;
+    }
+    .catalog-list .cards .card .card__btn {
+        background: #C2A969;
+        color: #fff;
+        border: 1px solid #C2A969;
+    }
+    .catalog-list .panel-collapse .panel-body {
+        width: 100%;
+    }
+    .panel-color {
+        display: block;
+    }
+    .said-bar__list-n {
+        display: none;
+    }
+}
   
 
 @media screen and (max-width: 500px) {
