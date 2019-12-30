@@ -4030,6 +4030,11 @@ input[type="checkbox"]:checked + label::before {
   padding-top: 32px;
 }
 
+.catalog-list .bread-crambs {
+  margin-bottom: 50px;
+  margin-left: 125px;
+}
+
 .catalog-list .bread-crambs__list {
   padding-top: 0;
 }
@@ -4083,6 +4088,12 @@ input[type="checkbox"]:checked + label::before {
 
 .catalog-list .said-bar__list-firs {
   margin-left: 0;
+}
+
+.catalog-list .cards {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .catalog-list .cards .card {
