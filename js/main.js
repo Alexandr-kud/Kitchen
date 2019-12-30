@@ -87,6 +87,15 @@ $(document).ready(function () {
         $('.cards-close').toggleClass('open-vis-cards');
     });
 
+    // $(".js-range-slider").ionRangeSlider({
+    //     type: "double",
+    //     min: 0,
+    //     max: 50000,
+    //     from: 0,
+    //     to: 50000,
+    //     grid: false
+    // });
+
 });
 
 
@@ -101,3 +110,180 @@ var swiper = new Swiper('.swiper-container', {
     },
   });
 
+
+  var $range = $(".js-range-slider"),
+    $inputFrom = $(".js-input-from"),
+    $inputTo = $(".js-input-to"),
+    instance,
+    min = 5000,
+    max = 50000,
+    from = 0,
+    to = 0;
+
+$range.ionRangeSlider({
+	skin: "round",
+    type: "double",
+    min: min,
+    max: max,
+    from: 5000,
+    to: 50000,
+    onStart: updateInputs,
+    onChange: updateInputs
+});
+instance = $range.data("ionRangeSlider");
+
+function updateInputs (data) {
+	from = data.from;
+    to = data.to;
+    
+    $inputFrom.prop("value", from);
+    $inputTo.prop("value", to);	
+}
+
+$inputFrom.on("input", function () {
+    var val = $(this).prop("value");
+    
+    // validate
+    if (val < min) {
+        val = min;
+    } else if (val > to) {
+        val = to;
+    }
+    
+    instance.update({
+        from: val
+    });
+});
+
+$inputTo.on("input", function () {
+    var val = $(this).prop("value");
+    
+    // validate
+    if (val < from) {
+        val = from;
+    } else if (val > max) {
+        val = max;
+    }
+    
+    instance.update({
+        to: val
+    });
+});
+
+var $range = $(".js-range-slider-wid"),
+    $inputFrom = $(".js-input-from-wid"),
+    $inputTo = $(".js-input-to-wid"),
+    instance,
+    min = 12,
+    max = 45,
+    from = 0,
+    to = 0;
+
+$range.ionRangeSlider({
+    skin: "round",
+    type: "double",
+    min: min,
+    max: max,
+    from: 12,
+    to: 45,
+    onStart: updateInputs,
+    onChange: updateInputs
+});
+    instance = $range.data("ionRangeSlider");
+
+function updateInputs (data) {
+    from = data.from;
+    to = data.to;
+
+    $inputFrom.prop("value", from);
+    $inputTo.prop("value", to);	
+}
+
+$inputFrom.on("input", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < min) {
+        val = min;
+    } else if (val > to) {
+        val = to;
+    }
+
+    instance.update({
+        from: val
+    });
+});
+
+$inputTo.on("input", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < from) {
+        val = from;
+    } else if (val > max) {
+        val = max;
+    }
+
+    instance.update({
+        to: val
+    });
+});
+
+var $range = $(".js-range-slider-dim"),
+    $inputFrom = $(".js-input-from-dim"),
+    $inputTo = $(".js-input-to-dim"),
+    instance,
+    min = 12,
+    max = 45,
+    from = 0,
+    to = 0;
+
+$range.ionRangeSlider({
+    skin: "round",
+    type: "double",
+    min: min,
+    max: max,
+    from: 12,
+    to: 45,
+    onStart: updateInputs,
+    onChange: updateInputs
+});
+    instance = $range.data("ionRangeSlider");
+
+function updateInputs (data) {
+    from = data.from;
+    to = data.to;
+
+    $inputFrom.prop("value", from);
+    $inputTo.prop("value", to);	
+}
+
+$inputFrom.on("input", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < min) {
+        val = min;
+    } else if (val > to) {
+        val = to;
+    }
+
+    instance.update({
+        from: val
+    });
+});
+
+$inputTo.on("input", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < from) {
+        val = from;
+    } else if (val > max) {
+        val = max;
+    }
+
+    instance.update({
+        to: val
+    });
+});
