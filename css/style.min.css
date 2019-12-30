@@ -4108,7 +4108,7 @@ input[type="checkbox"]:checked + label::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 110px;
 }
 
 .catalog-list .cards .card .card__box {
