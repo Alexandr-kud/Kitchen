@@ -4227,6 +4227,141 @@ input[type="checkbox"]:checked + label::before {
   border: 1px solid #000;
 }
 
+.case {
+  font-family: "Montserrat", sans-serif;
+}
+
+.case .bread-crambs {
+  max-width: 112px;
+}
+
+.case .case__title {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+  margin-bottom: 36px;
+}
+
+.case .case__name {
+  border-bottom: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 19px;
+}
+
+.case .case__name li {
+  margin-right: 63px;
+}
+
+.case .case__name li:nth-child(1) {
+  margin-right: 471px;
+}
+
+.case .case__box {
+  margin-bottom: 29px;
+}
+
+.case .case__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #000;
+  padding: 15px 0;
+}
+
+.case .case__card img {
+  width: 152px;
+  height: 152px;
+}
+
+.case .case__card .card__head {
+  font-weight: 500;
+  font-size: 15px;
+  color: #000000;
+  margin-bottom: 7px;
+}
+
+.case .case__card .card__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  color: #000000;
+}
+
+.case .case__card .card__post {
+  margin-right: 141px;
+}
+
+.case .case__card .stepper {
+  margin-left: 57px;
+  margin-right: 101px;
+}
+
+.case .case__card .card__close {
+  background: #fff;
+  color: #000;
+  border: none;
+}
+
+.case .case__card li:nth-child(6) {
+  margin-left: 69px;
+}
+
+.case .case__card li:nth-child(7) {
+  margin-left: auto;
+}
+
+.case .conclusion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.case .conclusion__text {
+  font-size: 25px;
+}
+
+.case .conclusion__btn {
+  background: none;
+  border: none;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+
+.case .case__btn {
+  border: 1px solid #C2A969;
+  background: #C2A969;
+  display: block;
+  width: 221px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.4em;
+  padding: 12px 0;
+  text-transform: uppercase;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+  margin-bottom: 67px;
+}
+
+.case .case__btn:hover {
+  background: #fff;
+  color: #C2A969;
+}
+
 @media screen and (max-width: 1850px) {
   .creuset__img {
     position: absolute;
@@ -5172,7 +5307,7 @@ input[type="checkbox"]:checked + label::before {
     position: absolute;
     z-index: 5;
     background: #fff;
-    width: 100%;
+    width: 95%;
     height: 47px;
     overflow: hidden;
   }

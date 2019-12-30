@@ -2435,4 +2435,112 @@
     }
 }
 
+.case {
+    font-family: "Montserrat", sans-serif;
+    .bread-crambs {
+        max-width: 112px;
+    }
+    .case__title {
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 37px;
+        color: #000000;
+        margin-bottom: 36px;
+    }
+    .case__name {
+        border-bottom: 1px solid #000;
+        display: flex;
+        padding-bottom: 19px;
+        li {
+            margin-right: 63px;
+        }
+        li:nth-child(1) {
+            margin-right: 471px;
+        }
+    }
+    .case__box {
+        margin-bottom: 29px;
+    }
+    .case__card {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #000;
+        padding: 15px 0;
+        img {
+            width: 152px;
+            height: 152px;
+        }
+        .card__head {
+            font-weight: 500;
+            font-size: 15px;
+            color: #000000;
+            margin-bottom: 7px;
+        }
+        .card__text {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            color: #000000;
+        }
+        .card__post {
+            margin-right: 141px;
+        }
+        .stepper {
+            margin-left: 57px;
+            margin-right: 101px;
+        }
+        .card__close {
+            background: #fff;
+            color: #000;
+            border: none;
+        }
+        li:nth-child(6) {
+            margin-left: 69px;
+        }
+        li:nth-child(7) {
+            margin-left: auto;
+        }
+    }
+    .conclusion {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .conclusion__text {
+        font-size: 25px;
+    }
+    .conclusion__btn {
+        background: none;
+        border: none;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+    }
+    .case__btn {
+        border: 1px solid #C2A969;
+        background: #C2A969;
+        display: block;
+        width: 221px;
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.4em;
+        padding: 12px 0;
+        text-transform: uppercase;
+        transition: .5s ease;
+        margin-bottom: 67px;
+        &:hover {
+            background: #fff;
+            color: #C2A969;
+        }
+    }
+}
+
+
+
+
+
+
 @import "media";
