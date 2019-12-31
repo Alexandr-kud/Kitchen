@@ -5061,6 +5061,17 @@ input[type="checkbox"]:checked + label::before {
   .under {
     text-decoration: line-through;
   }
+  .footer .line-nav .social {
+    max-width: 90px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .footer .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 @media screen and (max-width: 922px) {

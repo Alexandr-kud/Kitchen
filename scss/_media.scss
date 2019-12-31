@@ -522,6 +522,14 @@
     .under {
         text-decoration: line-through;
     }
+    .footer .line-nav .social {
+        max-width: 90px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .footer .container {
+        flex-direction: row;
+    }
 }
 @media screen and (max-width: 922px) {
     .product__box {
