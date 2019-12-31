@@ -101,6 +101,31 @@ $(document).ready(function () {
         $('.said-bar-close').addClass('d-none');
     });
 
+    $('.pers-order').click(function(e) {
+        e.preventDefault();
+        $('.story').toggleClass('d-none');
+        $('.story').toggleClass('story-active');
+    });
+
+    $('.personal-story-close').click(function(e) {
+        e.preventDefault();
+        $('.story').toggleClass('d-none');
+        $('.story').toggleClass('story-active');
+    });
+
+    $('.pers-favorites').click(function(e) {
+        e.preventDefault();
+        $('.cards').toggleClass('d-none-im');
+        $('.cards').toggleClass('favorites-active ');
+    });
+    $('.personal-favorites-close').click(function(e) {
+        e.preventDefault();
+        $('.cards').toggleClass('d-none-im');
+        $('.cards').toggleClass('favorites-active ');
+    });
+
+
+
 });
 
 
